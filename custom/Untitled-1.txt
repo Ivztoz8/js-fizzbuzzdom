@@ -1,0 +1,47 @@
+
+// Js
+let container = document.getElementById("fizzContainer")
+
+for (let i = 1; i < 100; i++){
+    if( i% 3 = 0 && i % 5 = 0){
+        let fizzBuzz = "FizzBuzz";
+        container.innerHTML += `<div class="col col-${fizzBuzz}">${(fizzbuzz)}</div>`;
+    else if ( i % 3 = 0){
+        let fizz = "Fizz";
+         container.innerHTML += `<div class="col col-${fizz}">${(fizz)}</div>`;
+    } 
+    else if ( i % 5 = 0){
+        let fizz = "Buzz";
+        container.innerHTML += `<div class="col col-${buzz}">${(buzz)}</div>`;
+    }
+    else {
+        container.innerHTML += `<div class="col">${(i)}</div>`;
+    }    
+    }
+}
+
+// css
+
+col{
+    flex-basis: calc (100% / 9);
+    margin: 10 px;
+    padding: 30px;
+    aspect-ratio: 1;
+    display; flex;
+    justify content: center;
+    align content: center;
+}
+
+//le col colorate cambiate
+col-normal{
+background-color: pippo;
+}
+col-fizz{
+    background-color: cippo;
+}
+col-buzz{
+    background-color: lippo;
+}
+col-fizzBuzz{
+    background-color: nippo;
+}
